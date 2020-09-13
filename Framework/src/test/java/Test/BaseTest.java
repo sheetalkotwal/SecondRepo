@@ -34,8 +34,8 @@ File f=new File(System.getProperty("user.dir")+ "\\Properties.properties");
 FileInputStream fis=new FileInputStream(f);
 		Properties prop=new Properties();
 		prop.load(fis);
-//browsername=prop.getProperty("browser");
-		browsername=System.getProperty("browser");
+browsername=prop.getProperty("browser");
+		//browsername=System.getProperty("browser");
 
 	if(browsername.equalsIgnoreCase("chrome"))
 	{
